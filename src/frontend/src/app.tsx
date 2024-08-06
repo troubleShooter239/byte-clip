@@ -1,7 +1,4 @@
-import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import HomePage from "./pages/feed/feed";
-import PrivateRoute from "./utils/router";
 import AuthRootPage from "./pages/auth/auth_root_page";
 
 const App = () => {
@@ -13,8 +10,8 @@ const App = () => {
             Some private routes
           </Route>
         </Route> */}
-        <Route path="/signin" element={<AuthRootPage />} />
-        <Route path="/signup" element={<AuthRootPage />} />
+        <Route path="/sign-in" element={<AuthRootPage />} />
+        <Route path="/sign-up" element={<AuthRootPage />} />
       </Routes>
     </div>
   );

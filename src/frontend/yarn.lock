@@ -1428,6 +1428,11 @@
   resolved "https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.2.5.tgz#105c37d9d9620ce69b7f692a20c821bf1ad2cbf9"
   integrity sha512-sTcG+QZ6fdEUObICavU+aB3Mp8HY4n14wYHdxK4fXjPmv3PXZZeY5RaguJmGyeH/CJQhX3fqKUtS4qc1LoHwhQ==
 
+"@fontsource/nunito@^5.0.18":
+  version "5.0.18"
+  resolved "https://registry.yarnpkg.com/@fontsource/nunito/-/nunito-5.0.18.tgz#a5b2e306d4ac33e3b61c125a15554a282c430ee5"
+  integrity sha512-B7BS7ab43z5x9X6shdvwtHiYI73Y6kJvnHBJhoIdbqYbVGRf6kGMRfipH9dbmLsjL6elfxoAB3q75V23/qqE/g==
+
 "@humanwhocodes/config-array@^0.11.14":
   version "0.11.14"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.14.tgz#d78e481a039f7566ecc9660b4ea7fe6b1fec442b"
