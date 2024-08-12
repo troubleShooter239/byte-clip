@@ -16,33 +16,37 @@ const AuthRootPage: React.FC = (): JSX.Element => {
   const location = useLocation();
   return (
     <div className="root">
-      <form className="form">
-        <Box
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-          flexDirection="column"
-          maxWidth={640}
-          margin="auto"
-          padding={5}
-          borderRadius={5}
-        >
-          {location.pathname === "/sign-in" ? (
-            <SignInPage
-              setEmailOrUsername={setEmailOrUsername}
-              setPassword={setPassword}
-            />
-          ) : location.pathname === "/sign-up" ? (
-            <SignUpPage
-              setEmail={setEmail}
-              setUsername={setUsername}
-              setName={setName}
-              setPassword={setPassword}
-              setPasswordRepeat={setPasswordRepeat}
-            />
-          ) : null}
-        </Box>
-      </form>
+      {/* <Box
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        flexDirection="column"
+        maxWidth={640}
+        margin="auto"
+        padding={5}
+        borderRadius={5}
+      > */}
+      {location.pathname === "/sign-in" ? (
+        <SignInPage
+          setEmailOrUsername={setEmailOrUsername}
+          setPassword={setPassword}
+        />
+      ) : location.pathname === "/sign-up" ? (
+        <SignUpPage
+          setEmail={setEmail}
+          setUsername={setUsername}
+          setName={setName}
+          setPassword={setPassword}
+          setPasswordRepeat={setPasswordRepeat}
+        />
+      ) : null}
+      {/* </Box> */}
+      <img
+        src="../../assets/images/signin_image.png"
+        alt="background"
+        width={100}
+        height={100}
+      />
     </div>
   );
 };
