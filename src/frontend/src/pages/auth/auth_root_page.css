@@ -1,24 +1,21 @@
 .root {
   display: flex;
-  width: 100vw;
   align-items: center;
-  /* height: 100vh; */
   background-color: var(--black);
   min-height: 100vh;
 }
 
+.header-text {
+  color: var(--white);
+}
+
 img {
   width: 70vw;
-  /* min-height: 438px; */
   height: 100vh;
 }
 
 @media (max-width: 1024px) {
   img {
     display: none;
-  }
-  .root {
-    /* width: 100%;
-    height: auto; */
   }
 }

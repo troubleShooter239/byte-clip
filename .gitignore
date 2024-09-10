@@ -47,6 +47,3 @@ dmypy.json
 # Binary files
 bin/
 build/
-
-# Node modules
-node_modules/

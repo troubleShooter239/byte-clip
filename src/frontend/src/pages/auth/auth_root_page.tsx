@@ -7,7 +7,7 @@ import { useState } from "react";
 import signInImage from "../../assets/images/sign_in.png";
 import signUpImage from "../../assets/images/sign_up.jpg";
 
-const AuthRootPage: React.FC = (): JSX.Element => {
+const AuthRootPage: React.FC = (): React.JSX.Element => {
   const [emailOrUsername, setEmailOrUsername] = useState("");
   const [password, setPassword] = useState("");
   const [passwordRepeat, setPasswordRepeat] = useState("");

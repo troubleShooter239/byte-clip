@@ -10,14 +10,17 @@ import {
   Typography,
 } from "@mui/joy";
 import { PropsSignIn } from "../../../common/types/auth/auth_types";
+import React from "react";
 
-const SignInPage: React.FC<PropsSignIn> = (props: PropsSignIn): JSX.Element => {
+const SignInPage: React.FC<PropsSignIn> = (
+  props: PropsSignIn
+): React.JSX.Element => {
   const { setEmailOrUsername, setPassword } = props;
   return (
     <>
       <Stack gap={4} sx={{ mb: 2 }}>
         <Stack gap={1}>
-          <Typography component="h1" level="h3">
+          <Typography component="h1" level="h3" className="header-text">
             Sign in
           </Typography>
           <Typography level="body-sm">
@@ -40,7 +43,7 @@ const SignInPage: React.FC<PropsSignIn> = (props: PropsSignIn): JSX.Element => {
       <Stack gap={4} sx={{ mt: 2 }}>
         <form>
           <FormControl required>
-            <FormLabel>Email</FormLabel>
+            <FormLabel>Email or username</FormLabel>
             <Input
               type="email"
               name="email or username"
@@ -68,7 +71,7 @@ const SignInPage: React.FC<PropsSignIn> = (props: PropsSignIn): JSX.Element => {
               </Link>
             </Box>
             <Button type="submit" fullWidth>
-              Sign in
+              Explore clips
             </Button>
           </Stack>
         </form>
