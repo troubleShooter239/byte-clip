@@ -27,9 +27,6 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["@babel/core", "npm:7.25.2"],\
-          ["@babel/plugin-syntax-flow", "virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:7.24.7"],\
-          ["@babel/plugin-transform-react-jsx", "virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:7.25.2"],\
           ["@emotion/react", "virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:11.13.3"],\
           ["@emotion/styled", "virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:11.13.0"],\
           ["@fontsource/nunito", "npm:5.0.20"],\
@@ -37,7 +34,7 @@ const RAW_RUNTIME_STATE =
           ["@testing-library/dom", "npm:10.4.0"],\
           ["@testing-library/jest-dom", "npm:6.5.0"],\
           ["@testing-library/react", "virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:16.0.1"],\
-          ["@types/babel__core", "npm:7.20.5"],\
+          ["@testing-library/user-event", "virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:13.5.0"],\
           ["@types/jest", "npm:29.5.12"],\
           ["@types/react", "npm:18.3.5"],\
           ["@types/react-dom", "npm:18.3.0"],\
@@ -47,7 +44,7 @@ const RAW_RUNTIME_STATE =
           ["react-router-dom", "virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:6.26.2"],\
           ["react-scripts", "virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:5.0.1"],\
           ["typescript", "patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587"],\
-          ["web-vitals", "npm:4.2.3"]\
+          ["web-vitals", "npm:2.1.4"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -1069,20 +1066,6 @@ const RAW_RUNTIME_STATE =
           "@types/babel__core"\
         ],\
         "linkType": "HARD"\
-      }],\
-      ["virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:7.24.7", {\
-        "packageLocation": "./.yarn/__virtual__/@babel-plugin-syntax-flow-virtual-e6f3bf481e/6/C:/Users/morgu/AppData/Local/Yarn/Berry/cache/@babel-plugin-syntax-flow-npm-7.24.7-8f0fd978b1-10c0.zip/node_modules/@babel/plugin-syntax-flow/",\
-        "packageDependencies": [\
-          ["@babel/plugin-syntax-flow", "virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:7.24.7"],\
-          ["@babel/core", "npm:7.25.2"],\
-          ["@babel/helper-plugin-utils", "npm:7.24.8"],\
-          ["@types/babel__core", "npm:7.20.5"]\
-        ],\
-        "packagePeers": [\
-          "@babel/core",\
-          "@types/babel__core"\
-        ],\
-        "linkType": "HARD"\
       }]\
     ]],\
     ["@babel/plugin-syntax-import-assertions", [\
@@ -1226,20 +1209,6 @@ const RAW_RUNTIME_STATE =
           ["@babel/plugin-syntax-jsx", "npm:7.24.7"]\
         ],\
         "linkType": "SOFT"\
-      }],\
-      ["virtual:79a33d38c503d2f8932535b5d4938199ce23ddf0e6e73028ca704a750e1ebed83138286ae4523b5ee1ce282cb32fcc701c7f3bf4c54b79b8f0a82cd2109d19ee#npm:7.24.7", {\
-        "packageLocation": "./.yarn/__virtual__/@babel-plugin-syntax-jsx-virtual-cbd0f8afb7/6/C:/Users/morgu/AppData/Local/Yarn/Berry/cache/@babel-plugin-syntax-jsx-npm-7.24.7-8f9596c5ff-10c0.zip/node_modules/@babel/plugin-syntax-jsx/",\
-        "packageDependencies": [\
-          ["@babel/plugin-syntax-jsx", "virtual:79a33d38c503d2f8932535b5d4938199ce23ddf0e6e73028ca704a750e1ebed83138286ae4523b5ee1ce282cb32fcc701c7f3bf4c54b79b8f0a82cd2109d19ee#npm:7.24.7"],\
-          ["@babel/core", "npm:7.25.2"],\
-          ["@babel/helper-plugin-utils", "npm:7.24.8"],\
-          ["@types/babel__core", "npm:7.20.5"]\
-        ],\
-        "packagePeers": [\
-          "@babel/core",\
-          "@types/babel__core"\
-        ],\
-        "linkType": "HARD"\
       }],\
       ["virtual:a84ee18b5b3e1111717a7396ed590054827fe963c8cd924eb8a3c737a7d34ff5d9dede36da45f8926f3e9bf921f250fde79c578d1d2a551c4113268a1fd908f7#npm:7.24.7", {\
         "packageLocation": "./.yarn/__virtual__/@babel-plugin-syntax-jsx-virtual-577e461f9e/6/C:/Users/morgu/AppData/Local/Yarn/Berry/cache/@babel-plugin-syntax-jsx-npm-7.24.7-8f9596c5ff-10c0.zip/node_modules/@babel/plugin-syntax-jsx/",\
@@ -2607,24 +2576,6 @@ const RAW_RUNTIME_STATE =
           ["@babel/plugin-syntax-jsx", "virtual:a84ee18b5b3e1111717a7396ed590054827fe963c8cd924eb8a3c737a7d34ff5d9dede36da45f8926f3e9bf921f250fde79c578d1d2a551c4113268a1fd908f7#npm:7.24.7"],\
           ["@babel/types", "npm:7.25.6"],\
           ["@types/babel__core", null]\
-        ],\
-        "packagePeers": [\
-          "@babel/core",\
-          "@types/babel__core"\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:7.25.2", {\
-        "packageLocation": "./.yarn/__virtual__/@babel-plugin-transform-react-jsx-virtual-79a33d38c5/6/C:/Users/morgu/AppData/Local/Yarn/Berry/cache/@babel-plugin-transform-react-jsx-npm-7.25.2-1cc057ac5e-10c0.zip/node_modules/@babel/plugin-transform-react-jsx/",\
-        "packageDependencies": [\
-          ["@babel/plugin-transform-react-jsx", "virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:7.25.2"],\
-          ["@babel/core", "npm:7.25.2"],\
-          ["@babel/helper-annotate-as-pure", "npm:7.24.7"],\
-          ["@babel/helper-module-imports", "npm:7.24.7"],\
-          ["@babel/helper-plugin-utils", "npm:7.24.8"],\
-          ["@babel/plugin-syntax-jsx", "virtual:79a33d38c503d2f8932535b5d4938199ce23ddf0e6e73028ca704a750e1ebed83138286ae4523b5ee1ce282cb32fcc701c7f3bf4c54b79b8f0a82cd2109d19ee#npm:7.24.7"],\
-          ["@babel/types", "npm:7.25.6"],\
-          ["@types/babel__core", "npm:7.20.5"]\
         ],\
         "packagePeers": [\
           "@babel/core",\
@@ -5136,6 +5087,29 @@ const RAW_RUNTIME_STATE =
           "@types/testing-library__dom",\
           "react-dom",\
           "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@testing-library/user-event", [\
+      ["npm:13.5.0", {\
+        "packageLocation": "../../../../../C:/Users/morgu/AppData/Local/Yarn/Berry/cache/@testing-library-user-event-npm-13.5.0-1ff89b703a-10c0.zip/node_modules/@testing-library/user-event/",\
+        "packageDependencies": [\
+          ["@testing-library/user-event", "npm:13.5.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:13.5.0", {\
+        "packageLocation": "./.yarn/__virtual__/@testing-library-user-event-virtual-735d1e0083/6/C:/Users/morgu/AppData/Local/Yarn/Berry/cache/@testing-library-user-event-npm-13.5.0-1ff89b703a-10c0.zip/node_modules/@testing-library/user-event/",\
+        "packageDependencies": [\
+          ["@testing-library/user-event", "virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:13.5.0"],\
+          ["@babel/runtime", "npm:7.25.6"],\
+          ["@testing-library/dom", "npm:10.4.0"],\
+          ["@types/testing-library__dom", null]\
+        ],\
+        "packagePeers": [\
+          "@testing-library/dom",\
+          "@types/testing-library__dom"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -10163,9 +10137,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["frontend", "workspace:."],\
-          ["@babel/core", "npm:7.25.2"],\
-          ["@babel/plugin-syntax-flow", "virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:7.24.7"],\
-          ["@babel/plugin-transform-react-jsx", "virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:7.25.2"],\
           ["@emotion/react", "virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:11.13.3"],\
           ["@emotion/styled", "virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:11.13.0"],\
           ["@fontsource/nunito", "npm:5.0.20"],\
@@ -10173,7 +10144,7 @@ const RAW_RUNTIME_STATE =
           ["@testing-library/dom", "npm:10.4.0"],\
           ["@testing-library/jest-dom", "npm:6.5.0"],\
           ["@testing-library/react", "virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:16.0.1"],\
-          ["@types/babel__core", "npm:7.20.5"],\
+          ["@testing-library/user-event", "virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:13.5.0"],\
           ["@types/jest", "npm:29.5.12"],\
           ["@types/react", "npm:18.3.5"],\
           ["@types/react-dom", "npm:18.3.0"],\
@@ -10183,7 +10154,7 @@ const RAW_RUNTIME_STATE =
           ["react-router-dom", "virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:6.26.2"],\
           ["react-scripts", "virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:5.0.1"],\
           ["typescript", "patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587"],\
-          ["web-vitals", "npm:4.2.3"]\
+          ["web-vitals", "npm:2.1.4"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -18375,10 +18346,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["web-vitals", [\
-      ["npm:4.2.3", {\
-        "packageLocation": "../../../../../C:/Users/morgu/AppData/Local/Yarn/Berry/cache/web-vitals-npm-4.2.3-c4cc9b1531-10c0.zip/node_modules/web-vitals/",\
+      ["npm:2.1.4", {\
+        "packageLocation": "../../../../../C:/Users/morgu/AppData/Local/Yarn/Berry/cache/web-vitals-npm-2.1.4-68bdd9ecb2-10c0.zip/node_modules/web-vitals/",\
         "packageDependencies": [\
-          ["web-vitals", "npm:4.2.3"]\
+          ["web-vitals", "npm:2.1.4"]\
         ],\
         "linkType": "HARD"\
       }]\
