@@ -15,7 +15,7 @@ import React from "react";
 const SignInPage: React.FC<PropsSignIn> = (
   props: PropsSignIn
 ): React.JSX.Element => {
-  const { setEmailOrUsername, setPassword } = props;
+  const { handleSubmit, setEmailOrUsername, setPassword } = props;
   return (
     <>
       <Stack gap={4} sx={{ mb: 2 }}>
@@ -41,7 +41,7 @@ const SignInPage: React.FC<PropsSignIn> = (
       </Stack>
       <Divider>or</Divider>
       <Stack gap={4} sx={{ mt: 2 }}>
-        <form>
+        <form onSubmit={handleSubmit}>
           <FormControl required>
             <FormLabel>Email or username</FormLabel>
             <Input
