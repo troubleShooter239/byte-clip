@@ -1,40 +1,43 @@
-import { useLocation, useNavigate } from "react-router-dom";
-import SignInPage from "./sign-in/sign_in_page";
-import SignUpPage from "./sign-up/sign_up_page";
-import "./auth_root_page.css";
-import { Box } from "@mui/joy";
-import { useState } from "react";
-import signInImage from "../../assets/images/sign_in.png";
-import signUpImage from "../../assets/images/sign_up.jpg";
-import { instance } from "../../utils/axios/instances";
+import { useLocation, useNavigate } from 'react-router-dom'
+import SignInPage from './sign-in/sign_in_page'
+import SignUpPage from './sign-up/sign_up_page'
+import './auth_root_page.css'
+import { Box } from '@mui/joy'
+import { useState } from 'react'
+import signInImage from '../../assets/images/sign_in.png'
+import signUpImage from '../../assets/images/sign_up.jpg'
+import { instance } from '../../utils/axios/instances'
+import { useAppDispatch } from '../../hooks/auth'
+import { signIn } from '../../store/auth/auth'
 
 const AuthRootPage: React.FC = (): React.JSX.Element => {
-  const [emailOrUsername, setEmailOrUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [passwordRepeat, setPasswordRepeat] = useState("");
-  const [email, setEmail] = useState("");
-  const [username, setUsername] = useState("");
-  const [name, setName] = useState("");
+  const [emailOrUsername, setEmailOrUsername] = useState('')
+  const [password, setPassword] = useState('')
+  const [passwordRepeat, setPasswordRepeat] = useState('')
+  const [email, setEmail] = useState('')
+  const [username, setUsername] = useState('')
+  const [name, setName] = useState('')
 
-  const navigate = useNavigate();
+  const dispatch = useAppDispatch()
+  const navigate = useNavigate()
 
-  const pathname = useLocation().pathname;
+  const pathname = useLocation().pathname
 
-  if (pathname === "/sign-in") {
+  if (pathname === '/sign-in') {
     const handleSubmit = async (e: { preventDefault: () => void }) => {
-      e.preventDefault();
+      e.preventDefault()
 
       try {
         const user = await instance.post(pathname, {
           emailOrUsername,
           password,
-        });
-        console.log(user.data);
-        navigate("/");
+        })
+        dispatch(signIn(user.data))
+        navigate('/')
       } catch (e) {
-        console.log(e);
+        console.log(e)
       }
-    };
+    }
 
     return (
       <div className="root">
@@ -54,10 +57,10 @@ const AuthRootPage: React.FC = (): React.JSX.Element => {
         </Box>
         <img src={signInImage} alt="sign in" />
       </div>
-    );
-  } else if (pathname === "/sign-up") {
+    )
+  } else if (pathname === '/sign-up') {
     const handleSubmit = async (e: { preventDefault: () => void }) => {
-      e.preventDefault();
+      e.preventDefault()
 
       try {
         const user = await instance.post(pathname, {
@@ -66,13 +69,13 @@ const AuthRootPage: React.FC = (): React.JSX.Element => {
           name,
           password,
           passwordRepeat,
-        });
-        console.log(user.data);
-        navigate("/");
+        })
+        console.log(user.data)
+        navigate('/')
       } catch (e) {
-        console.log(e);
+        console.log(e)
       }
-    };
+    }
 
     return (
       <div className="root">
@@ -95,8 +98,6 @@ const AuthRootPage: React.FC = (): React.JSX.Element => {
         </Box>
         <img src={signUpImage} alt="sign up" />
       </div>
-    );
-  } else return <></>;
-};
-
-export default AuthRootPage;
+    )
+  } else return <></>
+}

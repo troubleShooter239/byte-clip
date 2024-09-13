@@ -1,9 +1,9 @@
-import { Navigate, Outlet } from "react-router-dom";
+import { Navigate, Outlet } from 'react-router-dom'
+import { useAuth } from '../hooks/auth'
 
 const PrivateRoute = () => {
-  const auth = true;
   // if has token => no auth, go to feed
-  return auth ? <Outlet /> : <Navigate to="signin" />;
-};
+  return useAuth() ? <Outlet /> : <Navigate to="signin" />
+}
 
-export default PrivateRoute;
+export default PrivateRoute

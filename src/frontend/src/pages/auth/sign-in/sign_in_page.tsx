@@ -8,14 +8,14 @@ import {
   Link,
   Stack,
   Typography,
-} from "@mui/joy";
-import { PropsSignIn } from "../../../common/types/auth/auth_types";
-import React from "react";
+} from '@mui/joy'
+import { PropsSignIn } from '../../../common/types/auth/auth_types'
+import React from 'react'
 
 const SignInPage: React.FC<PropsSignIn> = (
-  props: PropsSignIn
+  props: PropsSignIn,
 ): React.JSX.Element => {
-  const { handleSubmit, setEmailOrUsername, setPassword } = props;
+  const { handleSubmit, setEmailOrUsername, setPassword } = props
   return (
     <>
       <Stack gap={4} sx={{ mb: 2 }}>
@@ -24,7 +24,7 @@ const SignInPage: React.FC<PropsSignIn> = (
             Sign in
           </Typography>
           <Typography level="body-sm">
-            Not have any account?{" "}
+            Not have any account?{' '}
             <Link href="sign-up" level="title-sm">
               Sign up!
             </Link>
@@ -61,9 +61,9 @@ const SignInPage: React.FC<PropsSignIn> = (
           <Stack gap={4} sx={{ mt: 2 }}>
             <Box
               sx={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
               }}
             >
               <Link level="title-sm" href="forgot-password">
@@ -77,7 +77,7 @@ const SignInPage: React.FC<PropsSignIn> = (
         </form>
       </Stack>
     </>
-  );
-};
+  )
+}
 
-export default SignInPage;
+export default SignInPage

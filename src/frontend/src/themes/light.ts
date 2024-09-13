@@ -1,5 +1,5 @@
-import { extendTheme } from "@mui/joy/styles";
+import { extendTheme } from '@mui/joy/styles'
 
-const lightTheme = extendTheme({});
+const lightTheme = extendTheme({})
 
-export default lightTheme;
+export default lightTheme

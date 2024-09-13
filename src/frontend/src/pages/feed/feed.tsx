@@ -1,5 +1,5 @@
 const FeedPage = () => {
-  return <h1>Feed page</h1>;
-};
+  return <h1>Feed page</h1>
+}
 
-export default FeedPage;
+export default FeedPage

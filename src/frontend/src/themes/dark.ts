@@ -1,4 +1,4 @@
-import { extendTheme } from "@mui/joy/styles";
+import { extendTheme } from '@mui/joy/styles'
 
 const darkTheme = extendTheme({
   colorSchemes: {
@@ -8,14 +8,14 @@ const darkTheme = extendTheme({
           // main: "#2a2a2f"
         },
         background: {
-          body: "#2a2a2f",
+          body: '#2a2a2f',
         },
       },
     },
   },
   fontFamily: {
-    body: "Nunito",
+    body: 'Nunito',
   },
-});
+})
 
-export default darkTheme;
+export default darkTheme

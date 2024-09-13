@@ -1,5 +1,5 @@
-import { Route, Routes } from "react-router-dom";
-import AuthRootPage from "./pages/auth/auth_root_page";
+import { Route, Routes } from 'react-router-dom'
+import AuthRootPage from './pages/auth/auth_root_page'
 
 const App = () => {
   return (
@@ -14,7 +14,7 @@ const App = () => {
         <Route path="/sign-up" element={<AuthRootPage />} />
       </Routes>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
