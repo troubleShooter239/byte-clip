@@ -7,12 +7,12 @@ import {
   Link,
   Stack,
   Typography,
-} from "@mui/joy";
-import { PropsSignUp } from "../../../common/types/auth/auth_types";
-import React from "react";
+} from '@mui/joy'
+import { IPropsSignUp } from '../../../common/types/auth/auth_types'
+import React from 'react'
 
-const SignUpPage: React.FC<PropsSignUp> = (
-  props: PropsSignUp
+const SignUpPage: React.FC<IPropsSignUp> = (
+  props: IPropsSignUp,
 ): React.JSX.Element => {
   const {
     handleSubmit,
@@ -21,7 +21,7 @@ const SignUpPage: React.FC<PropsSignUp> = (
     setName,
     setPassword,
     setPasswordRepeat,
-  } = props;
+  } = props
   return (
     <>
       <Stack gap={4} sx={{ mb: 2 }}>
@@ -30,7 +30,7 @@ const SignUpPage: React.FC<PropsSignUp> = (
             Sign up
           </Typography>
           <Typography level="body-sm">
-            Have already account?{" "}
+            Have already account?{' '}
             <Link href="sign-in" level="title-sm">
               Sign in!
             </Link>
@@ -96,7 +96,7 @@ const SignUpPage: React.FC<PropsSignUp> = (
         </form>
       </Stack>
     </>
-  );
-};
+  )
+}
 
-export default SignUpPage;
+export default SignUpPage

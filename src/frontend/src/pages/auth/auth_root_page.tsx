@@ -9,6 +9,7 @@ import signUpImage from '../../assets/images/sign_up.jpg'
 import { instance } from '../../utils/axios/instances'
 import { useAppDispatch } from '../../hooks/auth'
 import { signIn } from '../../store/auth/auth'
+import { AppErrors } from '../../common/errors/app_errors'
 
 const AuthRootPage: React.FC = (): React.JSX.Element => {
   const [emailOrUsername, setEmailOrUsername] = useState('')
@@ -62,15 +63,17 @@ const AuthRootPage: React.FC = (): React.JSX.Element => {
     const handleSubmit = async (e: { preventDefault: () => void }) => {
       e.preventDefault()
 
+      if (password !== passwordRepeat)
+        throw new Error(AppErrors.PasswordDoNotMatch)
+
       try {
-        const user = await instance.post(pathname, {
+        const newUser = await instance.post(pathname, {
           email,
           username,
           name,
           password,
-          passwordRepeat,
         })
-        console.log(user.data)
+        dispatch(signIn(newUser.data))
         navigate('/')
       } catch (e) {
         console.log(e)

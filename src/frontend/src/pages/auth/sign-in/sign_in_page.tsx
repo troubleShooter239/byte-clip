@@ -9,11 +9,11 @@ import {
   Stack,
   Typography,
 } from '@mui/joy'
-import { PropsSignIn } from '../../../common/types/auth/auth_types'
+import { IPropsSignIn } from '../../../common/types/auth/auth_types'
 import React from 'react'
 
-const SignInPage: React.FC<PropsSignIn> = (
-  props: PropsSignIn,
+const SignInPage: React.FC<IPropsSignIn> = (
+  props: IPropsSignIn,
 ): React.JSX.Element => {
   const { handleSubmit, setEmailOrUsername, setPassword } = props
   return (

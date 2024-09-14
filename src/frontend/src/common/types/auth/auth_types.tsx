@@ -1,10 +1,10 @@
-export interface PropsSignIn {
+export interface IPropsSignIn {
   handleSubmit: (e: { preventDefault: () => void }) => Promise<void>
   setEmailOrUsername: (value: string) => void
   setPassword: (value: string) => void
 }
 
-export interface PropsSignUp {
+export interface IPropsSignUp {
   handleSubmit: (e: { preventDefault: () => void }) => Promise<void>
   setEmail: (value: string) => void
   setUsername: (value: string) => void
@@ -12,3 +12,10 @@ export interface PropsSignUp {
   setPassword: (value: string) => void
   setPasswordRepeat: (value: string) => void
 }
+
+export interface IAuthState {
+  user: IPublicUser
+  isLogged: boolean
+}
+
+interface IPublicUser {}
