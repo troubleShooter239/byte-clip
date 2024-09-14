@@ -101,3 +101,5 @@ const AuthRootPage: React.FC = (): React.JSX.Element => {
     )
   } else return <></>
 }
+
+export default AuthRootPage
